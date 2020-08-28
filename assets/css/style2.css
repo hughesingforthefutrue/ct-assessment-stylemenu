@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Oswald");
 /* 
     Add a CSS ruleset to accomplish the following:
     - Use the 'Oswald' font family at 14px throughout the body of the document.
 */
 
 body {
-  font-family}
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+}
 
 nav {
   font-family: sans-serif;
@@ -26,7 +27,8 @@ nav {
 h1 {
   font-size: 46px;
   font-weight: lighter;
- }
+  font-family: "Bungee Inline", cursive;
+}
 #menu {
   columns: 420px 2;
   column-gap: 60px;
@@ -71,14 +73,15 @@ dd {
 }
 
 dd::after {
-  content: " ";
+  content: " ,";
   display: block;
   clear: both;
   margin-bottom: 15px;
 }
 
-dt :: after {content: ","; display: inline-block;}
-dt :: last-of-type::after { display: none;}
+dt:not(:last-of-type)::after {
+  content: ",";
+}
 
 .price {
   float: right;

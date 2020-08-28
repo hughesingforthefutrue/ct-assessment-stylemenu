@@ -27,7 +27,7 @@ nav {
         - set the font color to #5d4037
 */
 h1 {
-  font-family: sans-serif;
+  font-family: "Supermercado One", cursive;
   font-size: 45px;
   color: #5d4037;
 }
@@ -66,7 +66,7 @@ h2 {
 */
 dt {
   font-size: 20px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 dd {
   margin: 0 0 12px 0;
